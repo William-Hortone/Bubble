@@ -1,0 +1,37 @@
+body{
+    height: 100vh;
+    overflow: hidden;
+    cursor:cell;
+}
+.bubble_style{
+    background-color: aquamarine;
+    border-radius: 500px;
+    position: absolute;
+    animation: moving 7s ;
+    filter: hue-rotate(0);
+    opacity: 0;
+}
+@keyframes moving {
+    
+    100%{
+        opacity: 1;
+        left: var(--left);
+        top: 105vh;
+        filter: hue-rotate(720deg);
+    }
+}
+
+div{
+    height: 30px;
+    width: 120px;
+    font-size:1rem ;
+    display: flex;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid rgba(78, 76, 76, 0.726);
+    box-shadow: .4px 1px 3px  ;
+}
+h1{
+  
+    opacity: .3;
+}
